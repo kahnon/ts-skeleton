@@ -1,0 +1,23 @@
+{
+  "scripts": {
+    "format": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
+    "build": "tsc",
+    "start": "cross-env NODE_ENV=production node build",
+    "start:dev": "cross-env NODE_ENV=development node build",
+    "watch": "nodemon src/index.ts"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
+    "@typescript-eslint/parser": "^5.38.1",
+    "eslint": "^8.24.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
